@@ -17,7 +17,7 @@ export class Card {
         // Long ranges get at most ~15 x-axis labels so they don't overlap.
         // 31 days or fewer keeps every label, exactly like before.
         // Example: 60 days -> a label every 4th day.
-        const labelStep = daysCount > 31 ? Math.ceil(daysCount / 15) : 1;
+        const labelStep = daysCount > 31 ? Math.ceil(daysCount / 10) : 1;
         const lastIndex = daysCount - 1;
 
         return {
